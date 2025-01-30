@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flaschendrehen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="names"></div>
+    <img id="bottle" src="bottle.png" alt="Bottle">
+  </div>
+  <div class="controls">
+    <input type="text" id="nameInput" placeholder="Name eingeben">
+    <button id="addName">Hinzufügen</button>
+    <button id="spin">Drehen</button>
+    <button id="reset" style="display: none;">Neue Runde</button>
+  </div>
+  <div id="winnerOverlay" class="overlay">
+    <div class="overlayContent">
+      <span id="closeIcon" style="position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 24px;">&times;</span>
+      <p id="winnerText"></p>
+      <button id="closeOverlay">Weiter</button>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
